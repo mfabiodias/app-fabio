@@ -18,14 +18,14 @@ Route::get('/', function () {
 });
 
 Route::get('/users', function () {
-    return response()->json(
+    dd(
         [
             "name" => "Fabio",
-            "cpf" => "1312312321"
+            "cpf" => "1312312321",
         ],
         [
             "name" => "Weslly",
-            "cpf" => "931283142"
-        ]
+            "cpf" => "931283142",
+        ],
     );
 });
