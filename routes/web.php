@@ -31,5 +31,9 @@ Route::get('/users', function () {
             "name" => "Elaine",
             "cpf" => "78923721",
         ],
+        [
+            "name" => "Talita",
+            "cpf" => "2e232112",
+        ],
     );
 });
