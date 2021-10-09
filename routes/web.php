@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users', function () {
+    return response()->json(
+        [
+            "name" => "Fabio",
+            "cpf" => "1312312321",
+        ],
+        [
+            "name" => "Weslly",
+            "cpf" => "931283142",
+        ],
+    );
+});
